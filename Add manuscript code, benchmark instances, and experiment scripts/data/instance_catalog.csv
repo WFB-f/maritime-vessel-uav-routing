@@ -1,0 +1,5 @@
+﻿instance,role,file,targets,available_vessels,task_groups,port_x_km,port_y_km,uav_endurance_h,patrol_cycle_h,vessel_speed_km_h,uav_speed_km_h,activation_cost_CNY_per_vessel,vessel_cost_CNY_per_km,uav_cost_CNY_per_km,one_uav_per_vessel,sha256
+36_4_16,benchmark,data/instances/36_4_16.csv,36,4,16,0,0,1.0,20.0,20,90,50000.0,85,5,1,b38a47ceddbd710885ff4d0c4371bd2b1331e7e59f406a6f442c436f9ef87a4a
+10_2_3,small,data/instances/10_2_3.csv,10,2,3,0,0,1.0,20.0,20,90,50000.0,85,5,1,3b9936c7c1599f72759e58829635207cb60485be39f415d675fb6becf42314e7
+30_3_8,medium,data/instances/30_3_8.csv,30,3,8,0,0,1.0,20.0,20,90,50000.0,85,5,1,f86d9dda3e8846b5f4f1953142059b048687fde268382676a660de7c71f7dd79
+50_7_18,large,data/instances/50_7_18.csv,50,7,18,0,0,1.0,20.0,20,90,50000.0,85,5,1,bc2451b0f5c7185180a68b8ee2ae631955c2a73c09f6edefe18dd06827336d07

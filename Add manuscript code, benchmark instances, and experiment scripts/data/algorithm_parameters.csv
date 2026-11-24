@@ -1,0 +1,23 @@
+﻿method,parameter,value,description
+All methods,available_vessels,m from instance_catalog.csv,Upper bound; activated vessel count is a decision
+All methods,task_groups,f from instance_catalog.csv,Fixed group count; membership may change during routing search
+Proposed,search_layers,3,Task membership; intra-group UAV order; vessel assignment and group order
+Proposed,group_DP_threshold,f <= 16,Optional group-level routing preprocessing; returned candidates require physical validation
+Proposed,clustering,K-means,Initial grouping
+Baseline ALNS,weight_update_segment,40 iterations,Weight update interval
+Baseline ALNS,old_weight_retention,0.6,Retained contribution of the preceding weight
+Baseline ALNS,cooling_factor,0.995,Geometric temperature reduction
+VNS,candidates_per_neighborhood,5,Number of candidate trials per neighborhood
+VNS,perturbation_strength,1 to 4 moves,Basic neighborhood perturbations
+PSO,particles,30,Swarm size
+PSO,inertia_weight,0.82 to 0.42,Decreasing inertia weight
+PSO,cognitive_coefficient,1.55,Cognitive term coefficient
+PSO,social_coefficient,1.55,Social term coefficient
+PSO,velocity_bound,0.30,Velocity limit
+GA,population,30,Population size
+GA,tournament_size,3,Tournament selection
+GA,elite_individuals,2,Elitism count
+GA,uniform_crossover_probability,0.9,Uniform crossover
+GA,mutation_probability_per_gene,1/d; d=2n+2f,Random-key encoding dimension
+SA,initial_temperature,Accept a 1% increase with probability 0.5,Initial temperature calibration
+SA,final_temperature_ratio,0.01,Geometric reduction over the remaining search budget
